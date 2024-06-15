@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker Application</title>
+    <meta name="description" content="Expense Tracker Application Interface">
+    <meta name="author" content="Your Name">
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Expense Tracker</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>About Expense Tracker</h2>
+            <p>This is a simple Expense Tracker Application interface.</p>
+        </section>
+
+        <section>
+            <h2>User Registration</h2>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>User Information Table</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows will be dynamically populated -->
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john.doe@example.com</td>
+                        <td>123-456-7890</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Example Image</h2>
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+        </section>
+
+        <section>
+            <h2>External Link</h2>
+            <p>Visit <a href="https://google.com" target="_blank">Google</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
 
