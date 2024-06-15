@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #0a1119;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+header .logo img {
+    margin-right: 10px;
+}
+
+header .logo-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    color: #efd1aa;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.section-tmp {
+    background-color: #fffefe;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+    margin-bottom: 2rem;
+}
+
+.user-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: #0a1119;
+    text-transform: capitalize;
+}
+
+.user-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-form .label {
+    margin-bottom: 1rem;
+}
+
+.user-form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.user-form input[type="text"],
+.user-form input[type="email"],
+.user-form input[type="tel"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.user-form button {
+    padding: 0.7rem;
+    background-color: #084d98;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.user-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Section */
+.table {
+    overflow-x: auto;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.table table h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #0a1119;
+    font-weight: 600;
+}
+
+.table table th,
+.table table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.table table th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.table table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer Section */
+footer {
+    background-color: #0a1119;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #efd1aa;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-tmp {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    header .logo {
+        flex-direction: column;
+    }
+
+    header .logo img {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-form h2 {
+        font-size: 1.25rem;
+    }
+
+    .user-form button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .table table th,
+    .table table td {
+        padding: 0.5rem;
+    }
+
+    .table table caption {
+        font-size: 1.25rem;
+    }
+}
