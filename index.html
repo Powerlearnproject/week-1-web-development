@@ -1,1 +1,64 @@
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Expense Tracker Interface</title>
+    </head>
+    <body>
+        <header>
+            <h1>Expense Tracker</h1>
+            <h2>Welcome to Expense Tracker</h2>
+            <p>Convenient and effortless expense tracking!</p>
+         </header>
+         <br />
+         <div>
+            <h3>Register Below</h3>
+            <form action="/submit_registration" method="POST">
+                <div>
+                 <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+             </div>
+             <br>
+             <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+            </div>
+             <br>
+             <div>
+                <label for="password">Password:</label>
+                 <input type="password" id="password" name="password">
+            </div>
+            <br>
+                <input type="submit" value="Register">
+        </div>
+         </form>    
+     </div>
+     <br>
+     <div>
+            <h3>User Information</h3>    
+            <table border="1">
+               <tr>
+                   <th>First Name</th>
+                   <th>Last Name</th>
+                   <th>Email</th>
+                   <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td>Monte</td>
+                    <td>Carlo</td>
+                    <td>carlo@gmail.com</td>
+                    <td>+254712345678</td>
+                </tr>
+            </table>    
+         </div> 
+         <br>
+         <h3>Expense Tracker Image</h3> 
+        <img src="Expense.jpg" height="400" alt="Expense Tracker">        
+        <br> 
+        <footer>
+            <p>For further inquiries visit <a href="http://google.com" target="_blank">google.com</a></p>   
+            <p>No copyright &copy;<small>June 2024</small></p>
+        </footer>                                     
+    </body>
+</html>  
